@@ -43,7 +43,7 @@ public class FrontController extends HttpServlet {
 		throws ServletException , IOException{
 		res.setContentType("application/json");
 		res.setStatus(404);
-		final String URI=req.getRequestURI().replace("/JDBCdemo", "").replaceFirst("/","");
+		final String URI=req.getRequestURI().replace("/rocp-project", "").replaceFirst("/","");
 				
 		String[] portions= URI.split("/");
 		
@@ -162,7 +162,7 @@ public class FrontController extends HttpServlet {
 			res.setContentType("application/json");
 			res.setStatus(404);
 			HttpSession session=req.getSession();
-			final String URI=req.getRequestURI().replace("/JDBCdemo", "").replaceFirst("/","");
+			final String URI=req.getRequestURI().replace("/rocp-project", "").replaceFirst("/","");
 		//	System.out.println(URI);
 			
 			String[] portions= URI.split("/");
@@ -347,7 +347,7 @@ public class FrontController extends HttpServlet {
 		}
 		String body = sb.toString();
 		
-		final String URI=req.getRequestURI().replace("/JDBCdemo", "").replaceFirst("/","");
+		final String URI=req.getRequestURI().replace("/rocp-project", "").replaceFirst("/","");
 				
 		String[] portions= URI.split("/");
 		
